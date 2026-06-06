@@ -1,0 +1,17 @@
+-- create table january
+CREATE TABLE january_jobs AS
+SELECT   *
+FROM job_postings_fact
+WHERE EXTRACT(MONTH FROM job_posted_date) = 1;
+
+-- create table february
+CREATE TABLE february_jobs AS
+SELECT   *
+FROM job_postings_fact
+WHERE EXTRACT(MONTH FROM job_posted_date) = 2;
+
+-- create table march
+CREATE TABLE march_jobs AS
+SELECT   *
+FROM job_postings_fact
+WHERE EXTRACT(MONTH FROM job_posted_date) = 3;
